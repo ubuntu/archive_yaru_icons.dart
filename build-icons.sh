@@ -26,9 +26,9 @@ then
     exit 1
 fi
 
-# fantasticon_flutter --from=icons --class-name=YaruIcons --out-font=lib/icon_font/ui_icons.ttf --out-flutter=lib/widgets/yaru_icons.dart --package=yaru_icons --naming-strategy=snake
+fantasticon_flutter --from=icons --class-name=YaruIcons --out-font=lib/icon_font/ui_icons.ttf --out-flutter=lib/widgets/yaru_icons.dart --package=yaru_icons --naming-strategy=snake
 
-# Build icons preview
+# Build icon library overview
 
 ICON_LIST_DOC_FILE='./doc/icon_list.md'
 
