@@ -15,7 +15,7 @@ import 'package:yaru_icons/widgets/yaru_icons.dart';
 
 ...
 
-Icon(YaruIcons.folder)
+Icon(YaruIcons.folder) 
 ```
 
 # Contributing
