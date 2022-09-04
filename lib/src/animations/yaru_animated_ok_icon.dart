@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 const _kTargetCanvasSize = 24.0;
 const _kTargetIconSize = 20.0;
 const _kAnimationCurve = Curves.easeInCubic;
-const _kAnimationDuration = 2500;
+const _kAnimationDuration = 500;
 
 /// An animated Yaru ok icon, similar to the original one
 class YaruAnimatedOkIcon extends StatefulWidget {
