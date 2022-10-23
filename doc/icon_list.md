@@ -170,6 +170,7 @@ Icon preview | Icon name | Usage
 ![games](../icons/games.svg) | games | `YaruIcons.games`
 ![globe_filled](../icons/globe-filled.svg) | globe filled | `YaruIcons.globe_filled`
 ![globe](../icons/globe.svg) | globe | `YaruIcons.globe`
+![gnome_logo](../icons/gnome-logo.svg) | gnome logo | `YaruIcons.gnome_logo`
 ![go_bottom](../icons/go/bottom.svg) | go bottom | `YaruIcons.go_bottom`
 ![go_down](../icons/go/down.svg) | go down | `YaruIcons.go_down`
 ![go_first](../icons/go/first.svg) | go first | `YaruIcons.go_first`
@@ -207,6 +208,7 @@ Icon preview | Icon name | Usage
 ![insert_link](../icons/insert/link.svg) | insert link | `YaruIcons.insert_link`
 ![insert_object](../icons/insert/object.svg) | insert object | `YaruIcons.insert_object`
 ![insert_text](../icons/insert/text.svg) | insert text | `YaruIcons.insert_text`
+![kde_logo](../icons/kde-logo.svg) | kde logo | `YaruIcons.kde_logo`
 ![keyboard_shortcuts_filled](../icons/keyboard-shortcuts-filled.svg) | keyboard shortcuts filled | `YaruIcons.keyboard_shortcuts_filled`
 ![keyboard_shortcuts](../icons/keyboard-shortcuts.svg) | keyboard shortcuts | `YaruIcons.keyboard_shortcuts`
 ![key_filled](../icons/key-filled.svg) | key filled | `YaruIcons.key_filled`
@@ -318,6 +320,9 @@ Icon preview | Icon name | Usage
 ![object_flip_vertical](../icons/object/flip-vertical.svg) | object flip vertical | `YaruIcons.object_flip_vertical`
 ![object_rotate_left](../icons/object/rotate-left.svg) | object rotate left | `YaruIcons.object_rotate_left`
 ![object_rotate_right](../icons/object/rotate-right.svg) | object rotate right | `YaruIcons.object_rotate_right`
+![office_presentation](../icons/office/presentation.svg) | office presentation | `YaruIcons.office_presentation`
+![office_speadsheet](../icons/office/speadsheet.svg) | office speadsheet | `YaruIcons.office_speadsheet`
+![office](../icons/office/_.svg) | office | `YaruIcons.office`
 ![ok_filled](../icons/ok-filled.svg) | ok filled | `YaruIcons.ok_filled`
 ![ok_simple](../icons/ok-simple.svg) | ok simple | `YaruIcons.ok_simple`
 ![ok](../icons/ok.svg) | ok | `YaruIcons.ok`
@@ -335,8 +340,10 @@ Icon preview | Icon name | Usage
 ![pan_up](../icons/pan/up.svg) | pan up | `YaruIcons.pan_up`
 ![parental_controls](../icons/parental-controls.svg) | parental controls | `YaruIcons.parental_controls`
 ![pen](../icons/pen.svg) | pen | `YaruIcons.pen`
-![phone_old_filled](../icons/phone-old-filled.svg) | phone old filled | `YaruIcons.phone_old_filled`
-![phone_old](../icons/phone-old.svg) | phone old | `YaruIcons.phone_old`
+![phone_old_filled](../icons/phone/old-filled.svg) | phone old filled | `YaruIcons.phone_old_filled`
+![phone_old](../icons/phone/old.svg) | phone old | `YaruIcons.phone_old`
+![phone_receiver](../icons/phone/receiver.svg) | phone receiver | `YaruIcons.phone_receiver`
+![phone](../icons/phone/_.svg) | phone | `YaruIcons.phone`
 ![pin](../icons/pin.svg) | pin | `YaruIcons.pin`
 ![plus](../icons/plus.svg) | plus | `YaruIcons.plus`
 ![power_filled](../icons/power-filled.svg) | power filled | `YaruIcons.power_filled`
@@ -453,6 +460,7 @@ Icon preview | Icon name | Usage
 ![window](../icons/window/_.svg) | window | `YaruIcons.window`
 ![window_top_bar](../icons/window/top-bar.svg) | window top bar | `YaruIcons.window_top_bar`
 ![wrench](../icons/wrench.svg) | wrench | `YaruIcons.wrench`
+![xfce_logo](../icons/xfce-logo.svg) | xfce logo | `YaruIcons.xfce_logo`
 ![zoom_fit_best](../icons/zoom/fit-best.svg) | zoom fit best | `YaruIcons.zoom_fit_best`
 ![zoom_in](../icons/zoom/in.svg) | zoom in | `YaruIcons.zoom_in`
 ![zoom_original](../icons/zoom/original.svg) | zoom original | `YaruIcons.zoom_original`
