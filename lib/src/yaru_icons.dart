@@ -411,10 +411,10 @@ class YaruIcons {
   static const stopwatch = _YaruIconsData(0xf286, 'stopwatch');
   static const subtitles_filled = _YaruIconsData(0xf287, 'subtitles_filled');
   static const subtitles = _YaruIconsData(0xf288, 'subtitles');
-  static const switch = _YaruIconsData(0xf289, 'switch');
-  static const switch_checked_filled = _YaruIconsData(0xf28a, 'switch_checked_filled');
-  static const switch_checked = _YaruIconsData(0xf28b, 'switch_checked');
-  static const switch_filled = _YaruIconsData(0xf28c, 'switch_filled');
+  static const switch_button = _YaruIconsData(0xf289, 'switch_button');
+  static const switch_button_checked_filled = _YaruIconsData(0xf28a, 'switch_button_checked_filled');
+  static const switch_button_checked = _YaruIconsData(0xf28b, 'switch_button_checked');
+  static const switch_button_filled = _YaruIconsData(0xf28c, 'switch_button_filled');
   static const synchronizing = _YaruIconsData(0xf28d, 'synchronizing');
   static const tab_new_filled = _YaruIconsData(0xf28e, 'tab_new_filled');
   static const tab_new = _YaruIconsData(0xf28f, 'tab_new');
@@ -870,10 +870,10 @@ class YaruIcons {
     'stopwatch': stopwatch,
     'subtitles_filled': subtitles_filled,
     'subtitles': subtitles,
-    'switch': switch,
-    'switch_checked_filled': switch_checked_filled,
-    'switch_checked': switch_checked,
-    'switch_filled': switch_filled,
+    'switch_button': switch_button,
+    'switch_button_checked_filled': switch_button_checked_filled,
+    'switch_button_checked': switch_button_checked,
+    'switch_button_filled': switch_button_filled,
     'synchronizing': synchronizing,
     'tab_new_filled': tab_new_filled,
     'tab_new': tab_new,
