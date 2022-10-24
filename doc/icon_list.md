@@ -66,6 +66,7 @@ Icon preview | Icon name | Usage
 ![colors](../icons/colors.svg) | colors | `YaruIcons.colors`
 ![compass_filled](../icons/compass-filled.svg) | compass filled | `YaruIcons.compass_filled`
 ![compass](../icons/compass.svg) | compass | `YaruIcons.compass`
+![computer_legacy](../icons/computer-legacy.svg) | computer legacy | `YaruIcons.computer_legacy`
 ![computer](../icons/computer.svg) | computer | `YaruIcons.computer`
 ![debian](../icons/debian.svg) | debian | `YaruIcons.debian`
 ![desktop_appearance](../icons/desktop/appearance.svg) | desktop appearance | `YaruIcons.desktop_appearance`
@@ -320,6 +321,7 @@ Icon preview | Icon name | Usage
 ![object_flip_vertical](../icons/object/flip-vertical.svg) | object flip vertical | `YaruIcons.object_flip_vertical`
 ![object_rotate_left](../icons/object/rotate-left.svg) | object rotate left | `YaruIcons.object_rotate_left`
 ![object_rotate_right](../icons/object/rotate-right.svg) | object rotate right | `YaruIcons.object_rotate_right`
+![office_drawing](../icons/office/drawing.svg) | office drawing | `YaruIcons.office_drawing`
 ![office_presentation](../icons/office/presentation.svg) | office presentation | `YaruIcons.office_presentation`
 ![office_speadsheet](../icons/office/speadsheet.svg) | office speadsheet | `YaruIcons.office_speadsheet`
 ![office](../icons/office/_.svg) | office | `YaruIcons.office`
