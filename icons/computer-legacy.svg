@@ -22,8 +22,8 @@
      inkscape:pagecheckerboard="0"
      showgrid="true"
      inkscape:zoom="18.134012"
-     inkscape:cx="18.77687"
-     inkscape:cy="16.791651"
+     inkscape:cx="18.832016"
+     inkscape:cy="16.846796"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -44,12 +44,12 @@
        empspacing="10" />
   </sodipodi:namedview>
   <path
-     style="color:#000000;fill:#808080;fill-opacity:1;-inkscape-stroke:none"
-     d="m 3,17 -1,3 v 2 h 20 v -2 l -1,-3 z"
-     id="path555"
-     sodipodi:nodetypes="ccccccc" />
-  <path
      id="rect439"
      style="color:#000000;fill:#808080;stroke-linejoin:round;-inkscape-stroke:none"
      d="M 4.4726562 2 C 2.000742 2.0109866 2 2.1875112 2 5 L 2 13 C 2 15.999988 2.000012 16 5 16 L 19 16 C 21.999988 16 22 15.999988 22 13 L 22 5 C 22 2.000012 21.999988 2 19 2 L 5 2 C 4.8125008 2 4.6374507 1.9992676 4.4726562 2 z M 6.5 4 L 12.5 4 C 13.884999 4 15 5.1150014 15 6.5 L 15 11.5 C 15 12.884999 13.884999 14 12.5 14 L 6.5 14 C 5.1150014 14 4 12.884999 4 11.5 L 4 6.5 C 4 5.1150014 5.1150014 4 6.5 4 z M 19 4 C 19.552284 4 20 4.4477159 20 5 C 20 5.5522841 19.552284 6 19 6 C 18.447716 6 18 5.5522841 18 5 C 18 4.4477159 18.447716 4 19 4 z M 17 8 L 20 8 L 20 9 L 17 9 L 17 8 z M 17 10 L 20 10 L 20 11 L 17 11 L 17 10 z " />
+  <path
+     id="rect448"
+     style="fill:#808080;stroke-linejoin:round"
+     d="m 4.5,17 h 15 C 22,17 22,17 22,19.5 22,22 22,22 19.5,22 H 4.5 C 2,22 2,22 2,19.5 2,17 2,17 4.5,17 Z"
+     sodipodi:nodetypes="sssssss" />
 </svg>
