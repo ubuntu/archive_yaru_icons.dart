@@ -50,6 +50,8 @@ Icon preview | Icon name | Usage
 ![camera_photo](../icons/camera/photo.svg) | camera photo | `YaruIcons.camera_photo`
 ![camera_video_filed](../icons/camera/video-filed.svg) | camera video filed | `YaruIcons.camera_video_filed`
 ![camera_video](../icons/camera/video.svg) | camera video | `YaruIcons.camera_video`
+![chat_bubble_filled](../icons/chat-bubble-filled.svg) | chat bubble filled | `YaruIcons.chat_bubble_filled`
+![chat_bubble](../icons/chat-bubble.svg) | chat bubble | `YaruIcons.chat_bubble`
 ![checkbox_button_checked_filled](../icons/checkbox-button/checked-filled.svg) | checkbox button checked filled | `YaruIcons.checkbox_button_checked_filled`
 ![checkbox_button_checked](../icons/checkbox-button/checked.svg) | checkbox button checked | `YaruIcons.checkbox_button_checked`
 ![checkbox_button_filled](../icons/checkbox-button/filled.svg) | checkbox button filled | `YaruIcons.checkbox_button_filled`
