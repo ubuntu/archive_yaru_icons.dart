@@ -26,4 +26,4 @@ then
     exit 1
 fi
 
-icon_font_generator --from=icons --class-name=YaruIcons --out-font=assets/ui_icons.ttf --out-flutter=lib/src/yaru_icons.dart --package=yaru_icons --naming-strategy=snake --normalize
+icon_font_generator --from=assets/icons --class-name=YaruIcons --out-font=assets/yaru_icons.ttf --out-flutter=lib/src/yaru_icons.dart --package=yaru_icons --naming-strategy=snake --normalize
