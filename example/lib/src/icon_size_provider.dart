@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class IconSizeProvider extends ChangeNotifier {
-  double _size = 24;
+  double _size = 48;
 
   double get size => _size;
 

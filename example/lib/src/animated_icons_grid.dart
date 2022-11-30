@@ -1,12 +1,13 @@
-import 'package:example/src/icon_size_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:yaru_colors/yaru_colors.dart';
 import 'package:yaru_icons/yaru_icons.dart';
 
+import 'icon_size_provider.dart';
+
 @immutable
 class YaruAnimatedIconsGrid extends StatelessWidget {
-  const YaruAnimatedIconsGrid({Key? key}) : super(key: key);
+  const YaruAnimatedIconsGrid({super.key});
 
   @override
   Widget build(BuildContext context) {

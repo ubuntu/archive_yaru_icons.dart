@@ -1,11 +1,13 @@
-import 'package:example/src/icon_size_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:yaru_icons/yaru_icons.dart';
 
+import 'icon_size_provider.dart';
+
 @immutable
 class YaruIconTable extends StatelessWidget {
-  YaruIconTable({Key? key}) : super(key: key);
+  YaruIconTable({super.key});
+
   final _iconNames = YaruIcons.all.keys.toList();
 
   @override
@@ -13,15 +15,15 @@ class YaruIconTable extends StatelessWidget {
     return Consumer<IconSizeProvider>(
       builder: (context, iconSizeProvider, _) => SingleChildScrollView(
         child: DataTable(
-          columns: [
+          columns: const [
             DataColumn(
-              label: const Text('Icon preview'),
+              label: Text('Icon preview'),
             ),
             DataColumn(
-              label: const Text('Icon name'),
+              label: Text('Icon name'),
             ),
             DataColumn(
-              label: const Text('Usage'),
+              label: Text('Usage'),
             ),
           ],
           dataRowHeight: iconSizeProvider.size + 16,
