@@ -27,28 +27,3 @@ then
 fi
 
 icon_font_generator --from=icons --class-name=YaruIcons --out-font=assets/ui_icons.ttf --out-flutter=lib/src/yaru_icons.dart --package=yaru_icons --naming-strategy=snake --normalize
-
-# Build icon library overview
-
-ICON_LIST_DOC_FILE='./doc/icon_list.md'
-
-cat >$ICON_LIST_DOC_FILE <<EOL
-<!-- GENERATED FILE - DO NOT MODIFY BY HAND -->
-
-# Yaru_icons library overview
-
-Icon preview | Icon name | Usage
------------- | --------- | -----
-EOL
-
-cd icons
-ICONS_PATH_LIST=( $(find . -name "*.svg" | sort  | sed 's/.\///') )
-cd ..
-
-for i in ${ICONS_PATH_LIST[@]}
-do
-    ICON_PATH="../icons/${i}"
-    ICON_NAME=$(echo "$i" | sed 's/\/_.svg//' | sed 's/-/_/g' | sed 's/\//_/g' | sed 's/.svg//')
-    
-    echo $"![${ICON_NAME}](${ICON_PATH}) | ${ICON_NAME//_/ } | \`YaruIcons.${ICON_NAME}\`" >> $ICON_LIST_DOC_FILE
-done
