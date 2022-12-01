@@ -72,7 +72,7 @@ class _MyApp extends StatelessWidget {
                   Tooltip(
                     message: 'Decrease icon size',
                     child: TextButton(
-                      onPressed: iconViewProvider.isMinIconSize()
+                      onPressed: iconViewProvider.minIconSize
                           ? null
                           : iconViewProvider.decreaseIconSize,
                       child: const Icon(YaruIcons.minus),
@@ -81,7 +81,9 @@ class _MyApp extends StatelessWidget {
                   Tooltip(
                     message: 'Increase icon size',
                     child: TextButton(
-                      onPressed: iconViewProvider.increaseIconSize,
+                      onPressed: iconViewProvider.maxIconSize
+                          ? null
+                          : iconViewProvider.increaseIconSize,
                       child: const Icon(YaruIcons.plus),
                     ),
                   )

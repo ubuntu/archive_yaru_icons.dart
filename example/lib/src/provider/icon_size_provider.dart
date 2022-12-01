@@ -18,16 +18,19 @@ class IconViewProvider extends ChangeNotifier {
   }
 
   void increaseIconSize() {
-    _iconSize += 8;
-    notifyListeners();
+    if (!maxIconSize) {
+      _iconSize += 8;
+      notifyListeners();
+    }
   }
 
   void decreaseIconSize() {
-    if (!isMinIconSize()) {
+    if (!minIconSize) {
       _iconSize -= 8;
+      notifyListeners();
     }
-    notifyListeners();
   }
 
-  bool isMinIconSize() => _iconSize <= 16 ? true : false;
+  bool get minIconSize => _iconSize <= 16 ? true : false;
+  bool get maxIconSize => _iconSize >= 128 ? true : false;
 }
