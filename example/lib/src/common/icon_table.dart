@@ -50,52 +50,5 @@ class IconTable extends StatelessWidget {
         ],
       ),
     );
-
-    return LayoutBuilder(
-      builder: (context, constraints) => ConstrainedBox(
-        constraints: BoxConstraints.expand(
-          width: constraints.maxWidth,
-        ),
-        child: SingleChildScrollView(
-          child: DataTable(
-            columns: const [
-              DataColumn(
-                label: Text('Icon preview'),
-              ),
-              DataColumn(
-                label: Text('Icon name'),
-              ),
-              DataColumn(
-                label: Text('Usage'),
-              ),
-            ],
-            dataRowHeight: iconViewProvider.iconSize + 16,
-            rows: [
-              for (var i = 0; i < iconItems.length; i += 1)
-                DataRow(
-                  cells: [
-                    DataCell(
-                      ClickableIcon(iconItem: iconItems[i]),
-                    ),
-                    DataCell(
-                      SelectableText(
-                        beautifyIconName(iconItems[i].name),
-                        style: Theme.of(context).textTheme.bodySmall,
-                      ),
-                    ),
-                    DataCell(
-                      IconUsage(
-                        usage: iconItems[i].usage,
-                        label: false,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                      ),
-                    ),
-                  ],
-                ),
-            ],
-          ),
-        ),
-      ),
-    );
   }
 }

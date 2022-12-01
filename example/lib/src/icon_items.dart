@@ -18,3 +18,28 @@ final List<IconItem> iconItems = [
       ),
     )
 ];
+
+final List<IconItem> animatedIconItems = [
+  IconItem(
+    name: 'Ok',
+    usage: 'YaruAnimatedOkIcon()',
+    iconBuilder: (context, iconSize) => YaruAnimatedOkIcon(
+      size: iconSize,
+    ),
+  ),
+  IconItem(
+    name: 'Ok filled',
+    usage: 'YaruAnimatedOkIcon(filled: true)',
+    iconBuilder: (context, iconSize) => YaruAnimatedOkIcon(
+      size: iconSize,
+      filled: true,
+    ),
+  ),
+  IconItem(
+    name: 'No network',
+    usage: 'YaruAnimatedNoNetworkIcon()',
+    iconBuilder: (context, iconSize) => YaruAnimatedNoNetworkIcon(
+      size: iconSize,
+    ),
+  ),
+];
