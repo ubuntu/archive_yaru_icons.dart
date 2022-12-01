@@ -30,8 +30,9 @@ class Example extends StatelessWidget {
         ),
         actions: [
           Tooltip(
-            message:
-                iconViewProvider.gridView ? 'Use list view' : 'Use grid view',
+            message: iconViewProvider.gridView
+                ? 'Toggle list view'
+                : 'Toggle grid view',
             child: TextButton(
               onPressed: iconViewProvider.toggleGridView,
               child: iconViewProvider.gridView
@@ -70,6 +71,10 @@ class Example extends StatelessWidget {
         bottom: searchProvider.search
             ? SearchEntry(
                 appBarHeight: Theme.of(context).appBarTheme.toolbarHeight!,
+                onEscape: searchProvider.onEscape,
+                controller: searchProvider.textEntryController,
+                focusNode: searchProvider.textEntryFocusNode,
+                onChanged: searchProvider.onSearchChanged,
               )
             : null,
       ),

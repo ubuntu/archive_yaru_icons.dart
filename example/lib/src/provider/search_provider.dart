@@ -7,16 +7,16 @@ class SearchProvider extends ChangeNotifier {
   List<IconItem>? filteredIconItems;
   List<IconItem>? filteredAnimatedIconItems;
 
-  final searchController = TextEditingController();
-  final focusNode = FocusNode();
+  final textEntryController = TextEditingController();
+  final textEntryFocusNode = FocusNode();
 
   bool _search = false;
   bool get search => _search;
 
   @override
   void dispose() {
-    searchController.dispose();
-    focusNode.dispose();
+    textEntryController.dispose();
+    textEntryFocusNode.dispose();
 
     super.dispose();
   }
@@ -24,15 +24,16 @@ class SearchProvider extends ChangeNotifier {
   void _escape() {
     filteredIconItems = null;
     filteredAnimatedIconItems = null;
-    searchController.clear();
-    focusNode.unfocus();
+    textEntryController.clear();
+    textEntryFocusNode.unfocus();
   }
 
   void toggleSearch() {
     _search = !_search;
-    focusNode.requestFocus();
 
-    if (!_search) {
+    if (_search) {
+      textEntryFocusNode.requestFocus();
+    } else {
       _escape();
     }
 
@@ -50,10 +51,9 @@ class SearchProvider extends ChangeNotifier {
     if (value == '') {
       filteredIconItems = null;
       filteredAnimatedIconItems = null;
-      searchController.clear();
+      textEntryController.clear();
 
       notifyListeners();
-      return;
     }
 
     filteredIconItems = [];

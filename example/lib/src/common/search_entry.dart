@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
 import 'package:yaru_icons/yaru_icons.dart';
 
-import '../provider/search_provider.dart';
-
 class SearchEntry extends StatelessWidget implements PreferredSizeWidget {
-  const SearchEntry({super.key, required this.appBarHeight});
+  const SearchEntry({
+    super.key,
+    required this.appBarHeight,
+    required this.controller,
+    required this.focusNode,
+    required this.onChanged,
+    required this.onEscape,
+  });
 
   final double appBarHeight;
+  final TextEditingController? controller;
+  final FocusNode? focusNode;
+  final void Function(String)? onChanged;
+  final void Function() onEscape;
 
   @override
   Widget build(BuildContext context) {
-    final searchProvider = Provider.of<SearchProvider>(context);
-
     return RawKeyboardListener(
       focusNode: FocusNode(),
       onKey: (event) {
         if (event.logicalKey == LogicalKeyboardKey.escape) {
-          searchProvider.onEscape();
+          onEscape();
           return;
         }
       },
@@ -37,9 +43,9 @@ class SearchEntry extends StatelessWidget implements PreferredSizeWidget {
         ),
         textAlignVertical: TextAlignVertical.center,
         autofocus: true,
-        controller: searchProvider.searchController,
-        focusNode: searchProvider.focusNode,
-        onChanged: searchProvider.onSearchChanged,
+        controller: controller,
+        focusNode: focusNode,
+        onChanged: onChanged,
       ),
     );
   }
