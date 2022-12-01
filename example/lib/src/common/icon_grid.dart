@@ -22,6 +22,7 @@ class IconGrid extends StatelessWidget {
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
         maxCrossAxisExtent: iconViewProvider.iconSize * 1.5,
       ),
+      padding: const EdgeInsets.all(8),
       itemCount: iconItems.length,
       itemBuilder: (context, index) => Tooltip(
         verticalOffset: iconViewProvider.iconSize / 2,
