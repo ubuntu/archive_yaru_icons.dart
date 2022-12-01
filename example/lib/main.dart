@@ -49,25 +49,41 @@ class _MyApp extends StatelessWidget {
                   'Flutter Yaru Icons Demo (${iconViewProvider.iconSize.truncate()}px)',
                 ),
                 actions: [
-                  TextButton(
-                    onPressed: iconViewProvider.toggleGridView,
-                    child: iconViewProvider.gridView
-                        ? const Icon(YaruIcons.format_unordered_list)
-                        : const Icon(YaruIcons.app_grid),
+                  Tooltip(
+                    message: iconViewProvider.gridView
+                        ? 'Use list view'
+                        : 'Use grid view',
+                    child: TextButton(
+                      onPressed: iconViewProvider.toggleGridView,
+                      child: iconViewProvider.gridView
+                          ? const Icon(YaruIcons.format_unordered_list)
+                          : const Icon(YaruIcons.app_grid),
+                    ),
                   ),
-                  TextButton(
-                    onPressed: searchProvider.toggleSearch,
-                    child: const Icon(YaruIcons.search),
+                  Tooltip(
+                    message: searchProvider.search
+                        ? 'Hide search entry'
+                        : 'Show search entry',
+                    child: TextButton(
+                      onPressed: searchProvider.toggleSearch,
+                      child: const Icon(YaruIcons.search),
+                    ),
                   ),
-                  TextButton(
-                    onPressed: iconViewProvider.isMinIconSize()
-                        ? null
-                        : iconViewProvider.decreaseIconSize,
-                    child: const Icon(YaruIcons.minus),
+                  Tooltip(
+                    message: 'Decrease icon size',
+                    child: TextButton(
+                      onPressed: iconViewProvider.isMinIconSize()
+                          ? null
+                          : iconViewProvider.decreaseIconSize,
+                      child: const Icon(YaruIcons.minus),
+                    ),
                   ),
-                  TextButton(
-                    onPressed: iconViewProvider.increaseIconSize,
-                    child: const Icon(YaruIcons.plus),
+                  Tooltip(
+                    message: 'Increase icon size',
+                    child: TextButton(
+                      onPressed: iconViewProvider.increaseIconSize,
+                      child: const Icon(YaruIcons.plus),
+                    ),
                   )
                 ],
                 bottom: searchProvider.search
@@ -87,12 +103,14 @@ class _MyApp extends StatelessWidget {
                       return const YaruNavigationRailItem(
                         icon: Icon(YaruIcons.image),
                         label: Text('Static icons'),
+                        tooltip: 'Static icons',
                         style: style,
                       );
                     case 1:
                       return const YaruNavigationRailItem(
                         icon: Icon(YaruIcons.video),
                         label: Text('Animated icons'),
+                        tooltip: 'Animated icons',
                         style: style,
                       );
                     default:
