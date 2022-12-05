@@ -22,7 +22,7 @@ class Example extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(
-          Icons.usb,
+          YaruIcons.ubuntu_logo,
           color: YaruColors.orange,
         ),
         title: Text(
