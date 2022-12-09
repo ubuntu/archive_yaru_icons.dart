@@ -12,7 +12,7 @@ import '../yaru_icons.dart';
 /// Icon(
 ///   YaruFreedesktopIcons.help_about.icon
 ///   // or
-///   YaruFreedesktopIcons.values.asNameMap()['help_about']!.icon
+///   YaruFreedesktopIcons.all['help_about']!.icon
 /// )
 /// ```
 enum YaruFreedesktopIcons {
@@ -317,4 +317,7 @@ enum YaruFreedesktopIcons {
 
   final IconData icon;
   const YaruFreedesktopIcons._(this.icon);
+
+  /// Shortcut to get enum values as string map
+  static Map<String, YaruFreedesktopIcons> get all => values.asNameMap();
 }
