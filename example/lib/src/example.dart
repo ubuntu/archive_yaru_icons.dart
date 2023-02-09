@@ -78,7 +78,7 @@ class Example extends StatelessWidget {
               )
             : null,
       ),
-      body: YaruCompactLayout(
+      body: YaruNavigationPage(
         length: 3,
         itemBuilder: (context, index, selected) {
           const style = YaruNavigationRailStyle.labelled;
