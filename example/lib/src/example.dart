@@ -85,23 +85,23 @@ class Example extends StatelessWidget {
 
           switch (index) {
             case 0:
-              return const YaruNavigationRailItem(
-                icon: Icon(YaruIcons.image),
-                label: Text('Static icons'),
+              return YaruNavigationRailItem(
+                icon: const Icon(YaruIcons.image),
+                label: const Text('Static icons'),
                 tooltip: 'Static icons',
                 style: style,
               );
             case 1:
-              return const YaruNavigationRailItem(
-                icon: Icon(YaruIcons.video),
-                label: Text('Animated icons'),
+              return YaruNavigationRailItem(
+                icon: const Icon(YaruIcons.video),
+                label: const Text('Animated icons'),
                 tooltip: 'Animated icons',
                 style: style,
               );
             case 2:
-              return const YaruNavigationRailItem(
-                icon: Icon(YaruIcons.rule_and_pen),
-                label: Text('Widget icons'),
+              return YaruNavigationRailItem(
+                icon: const Icon(YaruIcons.rule_and_pen),
+                label: const Text('Widget icons'),
                 tooltip: 'Widget icons',
                 style: style,
               );
