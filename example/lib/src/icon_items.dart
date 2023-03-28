@@ -20,49 +20,53 @@ final List<IconItem> iconItems = [
 final List<IconItem> animatedIconItems = [
   IconItem(
     name: 'Ok',
-    usage: 'YaruAnimatedOkIcon()',
+    usage: _wrapWithAnimatedIconUsage('YaruAnimatedOkIcon()'),
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
+      const YaruAnimatedOkIcon(),
       mode: YaruAnimationMode.once,
       size: iconSize,
-      data: const YaruAnimatedOkIcon(),
     ),
   ),
   IconItem(
     name: 'Ok filled',
-    usage: 'YaruAnimatedOkIcon(filled: true)',
+    usage: _wrapWithAnimatedIconUsage('YaruAnimatedOkIcon(filled: true)'),
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
+      const YaruAnimatedOkIcon(filled: true),
       mode: YaruAnimationMode.once,
       size: iconSize,
-      data: const YaruAnimatedOkIcon(filled: true),
     ),
   ),
   IconItem(
     name: 'No network',
-    usage: 'YaruAnimatedNoNetworkIcon()',
+    usage: _wrapWithAnimatedIconUsage('YaruAnimatedNoNetworkIcon()'),
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
+      const YaruAnimatedNoNetworkIcon(),
       size: iconSize,
-      data: const YaruAnimatedNoNetworkIcon(),
     ),
   ),
   IconItem(
     name: 'Compass',
-    usage: 'YaruAnimatedCompassIcon()',
+    usage: _wrapWithAnimatedIconUsage('YaruAnimatedCompassIcon()'),
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
+      const YaruAnimatedCompassIcon(),
       mode: YaruAnimationMode.once,
       size: iconSize,
-      data: const YaruAnimatedCompassIcon(),
     ),
   ),
   IconItem(
     name: 'Compass filled',
-    usage: 'YaruAnimatedCompassIcon(filled: true)',
+    usage: _wrapWithAnimatedIconUsage('YaruAnimatedCompassIcon(filled: true)'),
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
+      const YaruAnimatedCompassIcon(filled: true),
       mode: YaruAnimationMode.once,
       size: iconSize,
-      data: const YaruAnimatedCompassIcon(filled: true),
     ),
   ),
 ];
+
+String _wrapWithAnimatedIconUsage(String source) {
+  return 'YaruAnimatedIcon(const $source)';
+}
 
 final List<IconItem> widgetIconItems = [
   IconItem(

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 enum YaruAnimationMode { once, repeat }
 
 class YaruAnimatedIcon extends StatefulWidget {
-  const YaruAnimatedIcon({
-    required this.data,
+  const YaruAnimatedIcon(
+    this.data, {
     this.duration,
     this.curve,
     this.size,
