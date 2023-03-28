@@ -20,7 +20,7 @@ final List<IconItem> iconItems = [
 final List<IconItem> animatedIconItems = [
   IconItem(
     name: 'Ok',
-    usage: _wrapWithAnimatedIconUsage('YaruAnimatedOkIcon()'),
+    usage: 'YaruAnimatedOkIcon()',
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
       const YaruAnimatedOkIcon(),
       mode: YaruAnimationMode.once,
@@ -29,7 +29,7 @@ final List<IconItem> animatedIconItems = [
   ),
   IconItem(
     name: 'Ok filled',
-    usage: _wrapWithAnimatedIconUsage('YaruAnimatedOkIcon(filled: true)'),
+    usage: 'YaruAnimatedOkIcon(filled: true)',
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
       const YaruAnimatedOkIcon(filled: true),
       mode: YaruAnimationMode.once,
@@ -38,7 +38,7 @@ final List<IconItem> animatedIconItems = [
   ),
   IconItem(
     name: 'No network',
-    usage: _wrapWithAnimatedIconUsage('YaruAnimatedNoNetworkIcon()'),
+    usage: 'YaruAnimatedNoNetworkIcon()',
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
       const YaruAnimatedNoNetworkIcon(),
       size: iconSize,
@@ -46,7 +46,7 @@ final List<IconItem> animatedIconItems = [
   ),
   IconItem(
     name: 'Compass',
-    usage: _wrapWithAnimatedIconUsage('YaruAnimatedCompassIcon()'),
+    usage: 'YaruAnimatedCompassIcon()',
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
       const YaruAnimatedCompassIcon(),
       mode: YaruAnimationMode.once,
@@ -55,7 +55,7 @@ final List<IconItem> animatedIconItems = [
   ),
   IconItem(
     name: 'Compass filled',
-    usage: _wrapWithAnimatedIconUsage('YaruAnimatedCompassIcon(filled: true)'),
+    usage: 'YaruAnimatedCompassIcon(filled: true)',
     iconBuilder: (context, iconSize) => YaruAnimatedIcon(
       const YaruAnimatedCompassIcon(filled: true),
       mode: YaruAnimationMode.once,
@@ -63,10 +63,6 @@ final List<IconItem> animatedIconItems = [
     ),
   ),
 ];
-
-String _wrapWithAnimatedIconUsage(String source) {
-  return 'YaruAnimatedIcon(const $source)';
-}
 
 final List<IconItem> widgetIconItems = [
   IconItem(
