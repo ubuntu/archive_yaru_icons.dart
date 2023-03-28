@@ -33,7 +33,7 @@ class _YaruAnimatedIconState extends State<YaruAnimatedIcon>
     _controller?.value = 0;
     _controller = AnimationController(
       vsync: this,
-      duration: duration ?? widget.data.duration,
+      duration: duration ?? widget.data.defaultDuration,
     );
 
     switch (mode) {
@@ -82,7 +82,7 @@ class _YaruAnimatedIconState extends State<YaruAnimatedIcon>
           context,
           CurvedAnimation(
             parent: _controller!,
-            curve: widget.curve ?? widget.data.curve,
+            curve: widget.curve ?? widget.data.defaultCurve,
           ),
           widget.size,
           widget.color,
@@ -95,8 +95,8 @@ class _YaruAnimatedIconState extends State<YaruAnimatedIcon>
 abstract class YaruAnimatedIconData {
   const YaruAnimatedIconData();
 
-  Duration get duration;
-  Curve get curve => Curves.linear;
+  Duration get defaultDuration;
+  Curve get defaultCurve => Curves.linear;
 
   Widget build(
     BuildContext context,
