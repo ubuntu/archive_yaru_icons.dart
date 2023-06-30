@@ -54,5 +54,3 @@ apps:
     extensions: [gnome]
     plugs:
       - gsettings
-      - network
-      - network-manager-observe
