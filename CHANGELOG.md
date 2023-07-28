@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.1 (2023-07-28)
+
+## What's Changed
+* fix: bump sdk version to <4.0 by @Jupi007 in https://github.com/ubuntu/yaru_icons.dart/pull/161
+
+
+**Full Changelog**: https://github.com/ubuntu/yaru_icons.dart/compare/v2.0.0...v2.0.1
+
 ## 2.0.0 (2023-07-23)
 
 ## What's Changed
