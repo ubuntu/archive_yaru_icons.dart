@@ -3,7 +3,7 @@
 ## 2.1.0 (2023-07-30)
 
 ## What's Changed
-* feat: add animated star icon #163 by @Jupi007 in https://github.com/ubuntu/yaru_icons.dart/pull/163
+* feat: add animated star icon by @Jupi007 in https://github.com/ubuntu/yaru_icons.dart/pull/163
 * fix: run the animation again on data change by @Jupi007 in https://github.com/ubuntu/yaru_icons.dart/pull/166
 * feat: add YaruAnimatedIcon initialProgress property by @Jupi007 in https://github.com/ubuntu/yaru_icons.dart/pull/167
 
