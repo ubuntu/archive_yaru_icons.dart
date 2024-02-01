@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.0.0 (2024-02-01)
+
+## What's Changed
+* feat!: use shapeshifter for all animated icons - 3.0 by @Jupi007 in https://github.com/ubuntu/yaru_icons.dart/pull/196
+
+
+**Full Changelog**: https://github.com/ubuntu/yaru_icons.dart/compare/v2.4.0...v3.0.0
+
 ## 2.4.0 (2024-02-01)
 
 ## What's Changed
