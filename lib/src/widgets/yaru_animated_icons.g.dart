@@ -24,18 +24,18 @@ const AnimatedVectorData _$compass = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.85,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.85,
                 end: 1.0,
               ),
@@ -43,22 +43,22 @@ const AnimatedVectorData _$compass = AnimatedVectorData(
                 start: Duration(milliseconds: 250),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.85,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.85,
                 end: 1.0,
               ),
@@ -66,7 +66,7 @@ const AnimatedVectorData _$compass = AnimatedVectorData(
                 start: Duration(milliseconds: 250),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -84,15 +84,15 @@ const AnimatedVectorData _$compass = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           rotation: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 360.0,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -119,18 +119,18 @@ const AnimatedVectorData _$compass_filled = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.85,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.85,
                 end: 1.0,
               ),
@@ -138,22 +138,22 @@ const AnimatedVectorData _$compass_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 250),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.85,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.85,
                 end: 1.0,
               ),
@@ -161,7 +161,7 @@ const AnimatedVectorData _$compass_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 250),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -178,8 +178,8 @@ const AnimatedVectorData _$compass_filled = AnimatedVectorData(
                 ),
                 properties: ClipPathAnimationProperties(
                   pathData: [
-                    AnimationProperty<PathData>(
-                      tween: PathDataLerp(
+                    AnimationStep<PathData>(
+                      tween: ConstPathDataTween(
                         begin: PathData.parse(
                           'M 0 0 L 0 24 L 24 24 L 24 0 L 0 0 Z M 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 L 12 12',
                         ),
@@ -191,7 +191,7 @@ const AnimatedVectorData _$compass_filled = AnimatedVectorData(
                         start: Duration(milliseconds: 150),
                         end: Duration(milliseconds: 500),
                       ),
-                      curve: ShapeshifterCurves.fastOutSlowIn,
+                      curve: ShapeShifterCurves.fastOutSlowIn,
                     ),
                   ],
                 ),
@@ -212,8 +212,8 @@ const AnimatedVectorData _$compass_filled = AnimatedVectorData(
                 ),
                 properties: ClipPathAnimationProperties(
                   pathData: [
-                    AnimationProperty<PathData>(
-                      tween: PathDataLerp(
+                    AnimationStep<PathData>(
+                      tween: ConstPathDataTween(
                         begin: PathData.parse(
                           'M 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 L 12 12',
                         ),
@@ -225,7 +225,7 @@ const AnimatedVectorData _$compass_filled = AnimatedVectorData(
                         start: Duration(milliseconds: 150),
                         end: Duration(milliseconds: 500),
                       ),
-                      curve: ShapeshifterCurves.fastOutSlowIn,
+                      curve: ShapeShifterCurves.fastOutSlowIn,
                     ),
                   ],
                 ),
@@ -241,15 +241,15 @@ const AnimatedVectorData _$compass_filled = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           rotation: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 360.0,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -277,32 +277,32 @@ const AnimatedVectorData _$heart = AnimatedVectorData(
             trimOffset: 0.909,
             properties: PathAnimationProperties(
               trimStart: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 0.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimEnd: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 1.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimOffset: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.909,
                     end: 0.0,
                   ),
@@ -310,7 +310,7 @@ const AnimatedVectorData _$heart = AnimatedVectorData(
                     start: Duration(milliseconds: 299),
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.fastOutSlowIn,
+                  curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
             ),
@@ -318,8 +318,8 @@ const AnimatedVectorData _$heart = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.8,
               ),
@@ -327,10 +327,10 @@ const AnimatedVectorData _$heart = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.8,
                 end: 1.0,
               ),
@@ -338,12 +338,12 @@ const AnimatedVectorData _$heart = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.8,
               ),
@@ -351,10 +351,10 @@ const AnimatedVectorData _$heart = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.8,
                 end: 1.0,
               ),
@@ -362,7 +362,7 @@ const AnimatedVectorData _$heart = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -390,32 +390,32 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
             trimOffset: 0.909,
             properties: PathAnimationProperties(
               trimStart: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 0.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimEnd: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 1.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimOffset: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.909,
                     end: 0.0,
                   ),
@@ -423,7 +423,7 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 299),
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.fastOutSlowIn,
+                  curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
             ),
@@ -431,8 +431,8 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.8,
               ),
@@ -440,10 +440,10 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.8,
                 end: 1.0,
               ),
@@ -451,12 +451,12 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.8,
               ),
@@ -464,10 +464,10 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.8,
                 end: 1.0,
               ),
@@ -475,7 +475,7 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -495,8 +495,8 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 1.0,
               ),
@@ -504,12 +504,12 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 1.0,
               ),
@@ -517,7 +517,7 @@ const AnimatedVectorData _$heart_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -537,8 +537,8 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
         ),
         properties: ClipPathAnimationProperties(
           pathData: [
-            AnimationProperty<PathData>(
-              tween: PathDataLerp(
+            AnimationStep<PathData>(
+              tween: ConstPathDataTween(
                 begin: PathData.parse(
                   'M 0 0 L 0 12 L 0 24 L 24 24 L 24 0 L 0 0 M 4.854 3.146 L 5.561 2.439 L 5.561 2.439 L 5.561 2.439 L 4.854 3.146 L 4.854 3.146',
                 ),
@@ -550,7 +550,7 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
                 start: Duration(milliseconds: 350),
                 end: Duration(milliseconds: 600),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -563,8 +563,8 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
         trimStart: 1.0,
         properties: PathAnimationProperties(
           trimStart: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.0,
               ),
@@ -572,7 +572,7 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
                 start: Duration(milliseconds: 350),
                 end: Duration(milliseconds: 600),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -585,8 +585,8 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
         trimStart: 1.0,
         properties: PathAnimationProperties(
           trimStart: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.0,
               ),
@@ -594,7 +594,7 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
                 start: Duration(milliseconds: 200),
                 end: Duration(milliseconds: 450),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -607,8 +607,8 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
         trimStart: 1.0,
         properties: PathAnimationProperties(
           trimStart: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.0,
               ),
@@ -616,7 +616,7 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
                 start: Duration(milliseconds: 150),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -629,8 +629,8 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
         trimStart: 1.0,
         properties: PathAnimationProperties(
           trimStart: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.0,
               ),
@@ -638,7 +638,7 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
                 start: Duration(milliseconds: 100),
                 end: Duration(milliseconds: 350),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -651,8 +651,8 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
         trimStart: 1.0,
         properties: PathAnimationProperties(
           trimStart: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.0,
               ),
@@ -660,7 +660,7 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
                 start: Duration(milliseconds: 50),
                 end: Duration(milliseconds: 300),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -676,51 +676,51 @@ const AnimatedVectorData _$no_network = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 1.0,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 1.0,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           pivotX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 12.0,
                 end: 12.0,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           pivotY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 19.0,
                 end: 19.0,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -747,18 +747,18 @@ const AnimatedVectorData _$ok = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.8,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.8,
                 end: 1.0,
               ),
@@ -766,22 +766,22 @@ const AnimatedVectorData _$ok = AnimatedVectorData(
                 start: Duration(milliseconds: 250),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.8,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 250),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.8,
                 end: 1.0,
               ),
@@ -789,7 +789,7 @@ const AnimatedVectorData _$ok = AnimatedVectorData(
                 start: Duration(milliseconds: 250),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -808,18 +808,18 @@ const AnimatedVectorData _$ok = AnimatedVectorData(
         trimEnd: 0.0,
         properties: PathAnimationProperties(
           trimEnd: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 0.33,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 350),
               ),
-              curve: ShapeshifterCurves.accelerate,
+              curve: ShapeShifterCurves.accelerate,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.33,
                 end: 1.0,
               ),
@@ -827,7 +827,7 @@ const AnimatedVectorData _$ok = AnimatedVectorData(
                 start: Duration(milliseconds: 350),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
           ],
         ),
@@ -849,8 +849,8 @@ const AnimatedVectorData _$ok_filled = AnimatedVectorData(
             ),
             properties: ClipPathAnimationProperties(
               pathData: [
-                AnimationProperty<PathData>(
-                  tween: PathDataLerp(
+                AnimationStep<PathData>(
+                  tween: ConstPathDataTween(
                     begin: PathData.parse(
                       'M 0 0 L 0 24 L 24 24 L 24 0 L 0 0 Z M 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 L 12 12',
                     ),
@@ -862,7 +862,7 @@ const AnimatedVectorData _$ok_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 325),
                     end: Duration(milliseconds: 500),
                   ),
-                  curve: ShapeshifterCurves.accelerateDecelerate,
+                  curve: ShapeShifterCurves.accelerateDecelerate,
                 ),
               ],
             ),
@@ -880,18 +880,18 @@ const AnimatedVectorData _$ok_filled = AnimatedVectorData(
             ],
             properties: GroupAnimationProperties(
               scaleX: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 1.0,
                     end: 0.8,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 250),
                   ),
-                  curve: ShapeshifterCurves.fastOutSlowIn,
+                  curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.8,
                     end: 1.0,
                   ),
@@ -899,22 +899,22 @@ const AnimatedVectorData _$ok_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 250),
                     end: Duration(milliseconds: 500),
                   ),
-                  curve: ShapeshifterCurves.fastOutSlowIn,
+                  curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
               scaleY: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 1.0,
                     end: 0.8,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 250),
                   ),
-                  curve: ShapeshifterCurves.fastOutSlowIn,
+                  curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.8,
                     end: 1.0,
                   ),
@@ -922,7 +922,7 @@ const AnimatedVectorData _$ok_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 250),
                     end: Duration(milliseconds: 500),
                   ),
-                  curve: ShapeshifterCurves.fastOutSlowIn,
+                  curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
             ),
@@ -941,18 +941,18 @@ const AnimatedVectorData _$ok_filled = AnimatedVectorData(
             trimEnd: 0.0,
             properties: PathAnimationProperties(
               trimEnd: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.0,
                     end: 0.33,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 350),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.33,
                     end: 1.0,
                   ),
@@ -960,7 +960,7 @@ const AnimatedVectorData _$ok_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 350),
                     end: Duration(milliseconds: 500),
                   ),
-                  curve: ShapeshifterCurves.accelerateDecelerate,
+                  curve: ShapeShifterCurves.accelerateDecelerate,
                 ),
               ],
             ),
@@ -973,8 +973,8 @@ const AnimatedVectorData _$ok_filled = AnimatedVectorData(
         ),
         properties: ClipPathAnimationProperties(
           pathData: [
-            AnimationProperty<PathData>(
-              tween: PathDataLerp(
+            AnimationStep<PathData>(
+              tween: ConstPathDataTween(
                 begin: PathData.parse(
                   'M 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 C 12 12 12 12 12 12 L 12 12',
                 ),
@@ -986,7 +986,7 @@ const AnimatedVectorData _$ok_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 325),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
           ],
         ),
@@ -1018,32 +1018,32 @@ const AnimatedVectorData _$star = AnimatedVectorData(
             trimOffset: 0.2,
             properties: PathAnimationProperties(
               trimStart: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 0.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimEnd: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 1.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimOffset: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.2,
                     end: 0.0,
                   ),
@@ -1051,7 +1051,7 @@ const AnimatedVectorData _$star = AnimatedVectorData(
                     start: Duration(milliseconds: 299),
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.linear,
+                  curve: ShapeShifterCurves.linear,
                 ),
               ],
             ),
@@ -1059,8 +1059,8 @@ const AnimatedVectorData _$star = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.75,
               ),
@@ -1068,10 +1068,10 @@ const AnimatedVectorData _$star = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.75,
                 end: 1.0,
               ),
@@ -1079,12 +1079,12 @@ const AnimatedVectorData _$star = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.75,
               ),
@@ -1092,10 +1092,10 @@ const AnimatedVectorData _$star = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.75,
                 end: 1.0,
               ),
@@ -1103,7 +1103,7 @@ const AnimatedVectorData _$star = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -1129,32 +1129,32 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
             trimOffset: 0.199,
             properties: PathAnimationProperties(
               trimStart: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 0.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimEnd: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 1.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimOffset: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.199,
                     end: 0.0,
                   ),
@@ -1162,7 +1162,7 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 299),
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.linear,
+                  curve: ShapeShifterCurves.linear,
                 ),
               ],
             ),
@@ -1170,8 +1170,8 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.75,
               ),
@@ -1179,10 +1179,10 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.75,
                 end: 1.0,
               ),
@@ -1190,12 +1190,12 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.75,
               ),
@@ -1203,10 +1203,10 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.75,
                 end: 1.0,
               ),
@@ -1214,7 +1214,7 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -1234,8 +1234,8 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 1.0,
               ),
@@ -1243,12 +1243,12 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 1.0,
               ),
@@ -1256,7 +1256,7 @@ const AnimatedVectorData _$star_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -1282,32 +1282,32 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
             trimOffset: 0.199,
             properties: PathAnimationProperties(
               trimStart: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 0.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimEnd: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.5,
                     end: 1.0,
                   ),
                   interval: AnimationInterval(
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.accelerate,
+                  curve: ShapeShifterCurves.accelerate,
                 ),
               ],
               trimOffset: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.199,
                     end: 0.0,
                   ),
@@ -1315,7 +1315,7 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 299),
                     end: Duration(milliseconds: 300),
                   ),
-                  curve: ShapeshifterCurves.linear,
+                  curve: ShapeShifterCurves.linear,
                 ),
               ],
             ),
@@ -1323,8 +1323,8 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.75,
               ),
@@ -1332,10 +1332,10 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.75,
                 end: 1.0,
               ),
@@ -1343,12 +1343,12 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 0.75,
               ),
@@ -1356,10 +1356,10 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 400),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.75,
                 end: 1.0,
               ),
@@ -1367,7 +1367,7 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 400),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -1392,8 +1392,8 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 1.0,
               ),
@@ -1401,12 +1401,12 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 1.0,
               ),
@@ -1414,7 +1414,7 @@ const AnimatedVectorData _$star_half_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
@@ -1441,8 +1441,8 @@ const AnimatedVectorData _$thumb_up = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 1.15,
               ),
@@ -1450,10 +1450,10 @@ const AnimatedVectorData _$thumb_up = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 450),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.15,
                 end: 1.0,
               ),
@@ -1461,12 +1461,12 @@ const AnimatedVectorData _$thumb_up = AnimatedVectorData(
                 start: Duration(milliseconds: 600),
                 end: Duration(milliseconds: 850),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 1.15,
               ),
@@ -1474,10 +1474,10 @@ const AnimatedVectorData _$thumb_up = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 450),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.15,
                 end: 1.0,
               ),
@@ -1485,22 +1485,22 @@ const AnimatedVectorData _$thumb_up = AnimatedVectorData(
                 start: Duration(milliseconds: 600),
                 end: Duration(milliseconds: 850),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           rotation: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 5.0,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 200),
               ),
-              curve: ShapeshifterCurves.decelerate,
+              curve: ShapeShifterCurves.decelerate,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 5.0,
                 end: -23.0,
               ),
@@ -1508,10 +1508,10 @@ const AnimatedVectorData _$thumb_up = AnimatedVectorData(
                 start: Duration(milliseconds: 200),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: -23.0,
                 end: 7.0,
               ),
@@ -1519,10 +1519,10 @@ const AnimatedVectorData _$thumb_up = AnimatedVectorData(
                 start: Duration(milliseconds: 600),
                 end: Duration(milliseconds: 850),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 7.0,
                 end: 0.0,
               ),
@@ -1530,7 +1530,7 @@ const AnimatedVectorData _$thumb_up = AnimatedVectorData(
                 start: Duration(milliseconds: 850),
                 end: Duration(milliseconds: 1000),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
           ],
         ),
@@ -1555,8 +1555,8 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
             fillColor: Color(0xFF808080),
             properties: PathAnimationProperties(
               fillAlpha: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 1.0,
                     end: 0.0,
                   ),
@@ -1564,7 +1564,7 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 200),
                     end: Duration(milliseconds: 450),
                   ),
-                  curve: ShapeshifterCurves.accelerateDecelerate,
+                  curve: ShapeShifterCurves.accelerateDecelerate,
                 ),
               ],
             ),
@@ -1581,8 +1581,8 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                 fillAlpha: 0.0,
                 properties: PathAnimationProperties(
                   fillAlpha: [
-                    AnimationProperty<double>(
-                      tween: ValueLerp<double>(
+                    AnimationStep<double>(
+                      tween: ConstTween<double>(
                         begin: 0.0,
                         end: 1.0,
                       ),
@@ -1590,7 +1590,7 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                         start: Duration(milliseconds: 200),
                         end: Duration(milliseconds: 450),
                       ),
-                      curve: ShapeshifterCurves.accelerateDecelerate,
+                      curve: ShapeShifterCurves.accelerateDecelerate,
                     ),
                   ],
                 ),
@@ -1598,8 +1598,8 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
             ],
             properties: GroupAnimationProperties(
               scaleX: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.75,
                     end: 1.0,
                   ),
@@ -1607,12 +1607,12 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 200),
                     end: Duration(milliseconds: 450),
                   ),
-                  curve: ShapeshifterCurves.accelerateDecelerate,
+                  curve: ShapeShifterCurves.accelerateDecelerate,
                 ),
               ],
               scaleY: [
-                AnimationProperty<double>(
-                  tween: ValueLerp<double>(
+                AnimationStep<double>(
+                  tween: ConstTween<double>(
                     begin: 0.75,
                     end: 1.0,
                   ),
@@ -1620,7 +1620,7 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                     start: Duration(milliseconds: 200),
                     end: Duration(milliseconds: 450),
                   ),
-                  curve: ShapeshifterCurves.accelerateDecelerate,
+                  curve: ShapeShifterCurves.accelerateDecelerate,
                 ),
               ],
             ),
@@ -1628,8 +1628,8 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
         ],
         properties: GroupAnimationProperties(
           scaleX: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 1.15,
               ),
@@ -1637,10 +1637,10 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 450),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.15,
                 end: 1.0,
               ),
@@ -1648,12 +1648,12 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 600),
                 end: Duration(milliseconds: 850),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           scaleY: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.0,
                 end: 1.15,
               ),
@@ -1661,10 +1661,10 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 450),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 1.15,
                 end: 1.0,
               ),
@@ -1672,22 +1672,22 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 600),
                 end: Duration(milliseconds: 850),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
           rotation: [
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 0.0,
                 end: 5.0,
               ),
               interval: AnimationInterval(
                 end: Duration(milliseconds: 200),
               ),
-              curve: ShapeshifterCurves.decelerate,
+              curve: ShapeShifterCurves.decelerate,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 5.0,
                 end: -23.0,
               ),
@@ -1695,10 +1695,10 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 200),
                 end: Duration(milliseconds: 500),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: -23.0,
                 end: 7.0,
               ),
@@ -1706,10 +1706,10 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 600),
                 end: Duration(milliseconds: 850),
               ),
-              curve: ShapeshifterCurves.fastOutSlowIn,
+              curve: ShapeShifterCurves.fastOutSlowIn,
             ),
-            AnimationProperty<double>(
-              tween: ValueLerp<double>(
+            AnimationStep<double>(
+              tween: ConstTween<double>(
                 begin: 7.0,
                 end: 0.0,
               ),
@@ -1717,7 +1717,7 @@ const AnimatedVectorData _$thumb_up_filled = AnimatedVectorData(
                 start: Duration(milliseconds: 850),
                 end: Duration(milliseconds: 1000),
               ),
-              curve: ShapeshifterCurves.accelerateDecelerate,
+              curve: ShapeShifterCurves.accelerateDecelerate,
             ),
           ],
         ),

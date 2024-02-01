@@ -107,7 +107,7 @@ class _YaruAnimatedVectorIconState extends State<YaruAnimatedVectorIcon>
           vector: widget.data,
           progress: _controller,
           size: widget.size != null ? Size.square(widget.size!) : null,
-          applyColor: true,
+          applyTheme: true,
           color: widget.color,
         );
       },
